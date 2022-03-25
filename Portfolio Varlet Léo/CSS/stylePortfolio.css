@@ -1,0 +1,165 @@
+/***** CSS *******/
+header {
+    padding-top: 50px;
+    padding-bottom: -25px;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0, 0, 0, .1),
+    0 0 5px rgba(0, 0, 0, .1),
+    0 1px 3px rgba(0, 0, 0, .3),
+    0 3px 5px rgba(0, 0, 0, .2),
+    0 5px 10px rgba(0, 0, 0, .25),
+    0 10px 10px rgba(0, 0, 0, .2),
+    0 20px 20px rgba(0, 0, 0, .15);
+    color: #fff;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        width: 300%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #49ad62;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover {
+    color: white;
+    border-bottom: 2px;
+}
+
+.sous {
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav > ul li:hover .sous {
+    display: block;
+}
+
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a {
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover {
+    border-bottom: none;
+    background-color: RGBa(0, 0, 0, 0.2);
+}
+
+.deroulant > a::after {
+    content: " ▼";
+    font-size: 12px;
+}
+
+.conteneur {
+    margin: 50px 20px;
+    height: 1500px;
+}
+
+
+p {
+    height: 350px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #000000;
+    margin-top: 75px;
+}
+
+p1 {
+    display: block;
+    font-family: verdana;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+p2 {
+    font-family: verdana;
+    font-size: 20px;
+    padding: 15px;
+}
+
+paraBTS {
+    display: block;
+    font-family: verdana;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+}
+
+paraIntro {
+    font-family: verdana;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+}
+
+form {
+    padding: 15px;
+}
+
+body {
+    margin: 0;
+    border: 30px solid #000;
+    background: linear-gradient(to bottom, #49ad62, #42ad62, #155920);
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
